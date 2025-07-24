@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "id": "priority-1",
+    "title": "Complete API integration for user dashboard",
+    "description": "Finish the REST API endpoints for the user dashboard including authentication and data fetching",
+    "status": "in-progress",
+    "userId": "user-1",
+    "createdAt": "2024-01-15T09:00:00Z",
+    "completedAt": null,
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 2,
+    "id": "priority-2",
+    "title": "Review pull requests for mobile app",
+    "description": "Code review for the new mobile features before release",
+    "status": "todo",
+    "userId": "user-1",
+    "createdAt": "2024-01-15T09:00:00Z",
+    "completedAt": null,
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 3,
+    "id": "priority-3",
+    "title": "Update project documentation",
+    "description": "Update the technical documentation with recent changes",
+    "status": "done",
+    "userId": "user-1",
+    "createdAt": "2024-01-15T09:00:00Z",
+    "completedAt": "2024-01-15T14:30:00Z",
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 4,
+    "id": "priority-4",
+    "title": "Finalize product roadmap for Q2",
+    "description": "Complete the quarterly planning and roadmap priorities",
+    "status": "in-progress",
+    "userId": "user-2",
+    "createdAt": "2024-01-15T08:30:00Z",
+    "completedAt": null,
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 5,
+    "id": "priority-5",
+    "title": "User research interviews",
+    "description": "Conduct 5 user interviews for the new feature validation",
+    "status": "todo",
+    "userId": "user-2",
+    "createdAt": "2024-01-15T08:30:00Z",
+    "completedAt": null,
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 6,
+    "id": "priority-6",
+    "title": "Design system component updates",
+    "description": "Update button and form components in the design system",
+    "status": "done",
+    "userId": "user-3",
+    "createdAt": "2024-01-14T16:00:00Z",
+    "completedAt": "2024-01-14T18:00:00Z",
+    "date": "2024-01-14"
+  },
+  {
+    "Id": 7,
+    "id": "priority-7",
+    "title": "Prepare marketing campaign assets",
+    "description": "Create social media and email templates for the product launch",
+    "status": "in-progress",
+    "userId": "user-4",
+    "createdAt": "2024-01-15T07:00:00Z",
+    "completedAt": null,
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 8,
+    "id": "priority-8",
+    "title": "Database optimization",
+    "description": "Optimize database queries for better performance",
+    "status": "blocked",
+    "userId": "user-5",
+    "createdAt": "2024-01-13T18:00:00Z",
+    "completedAt": null,
+    "date": "2024-01-13"
+  },
+  {
+    "Id": 9,
+    "id": "priority-9",
+    "title": "Feature specification review",
+    "description": "Review and approve the technical specifications for the new features",
+    "status": "done",
+    "userId": "user-6",
+    "createdAt": "2024-01-15T09:30:00Z",
+    "completedAt": "2024-01-15T11:00:00Z",
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 10,
+    "id": "priority-10",
+    "title": "Team standup preparation",
+    "description": "Prepare updates and blockers for the weekly team meeting",
+    "status": "todo",
+    "userId": "user-6",
+    "createdAt": "2024-01-15T09:30:00Z",
+    "completedAt": null,
+    "date": "2024-01-15"
+  }
+]
