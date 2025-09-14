@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import { AnimatePresence, motion } from "framer-motion";
+import { checkInService } from "@/services/api/checkInService";
+import FOIARequestView from "@/components/organisms/FOIARequestView";
+import ApperIcon from "@/components/ApperIcon";
 import Header from "@/components/organisms/Header";
-import PersonalView from "@/components/organisms/PersonalView";
-import TeamView from "@/components/organisms/TeamView";
 import WeeklyView from "@/components/organisms/WeeklyView";
+import TeamView from "@/components/organisms/TeamView";
+import PersonalView from "@/components/organisms/PersonalView";
 import CheckInModal from "@/components/molecules/CheckInModal";
 import Button from "@/components/atoms/Button";
-import ApperIcon from "@/components/ApperIcon";
-import { checkInService } from "@/services/api/checkInService";
-import { toast } from "react-toastify";
 
 function App() {
   const [activeView, setActiveView] = useState("personal");
@@ -49,7 +49,7 @@ function App() {
     }
   };
 
-  const renderView = () => {
+const renderView = () => {
     switch (activeView) {
       case "personal":
         return <PersonalView onCheckIn={handleCheckIn} />;
@@ -57,10 +57,13 @@ function App() {
         return <TeamView />;
       case "weekly":
         return <WeeklyView />;
+      case "foia":
+        return <FOIARequestView />;
       default:
         return <PersonalView onCheckIn={handleCheckIn} />;
     }
   };
+};
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
@@ -70,7 +73,7 @@ function App() {
         onCheckIn={handleCheckIn}
         hasCheckedInToday={hasCheckedInToday}
       />
-
+        
       <main className="container mx-auto px-4 py-6">
         <AnimatePresence mode="wait">
           <motion.div
@@ -120,6 +123,5 @@ function App() {
       />
     </div>
   );
-}
 
 export default App;
