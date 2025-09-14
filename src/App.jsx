@@ -3,10 +3,10 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { AnimatePresence, motion } from "framer-motion";
 import { checkInService } from "@/services/api/checkInService";
-import FOIARequestView from "@/components/organisms/FOIARequestView";
 import ApperIcon from "@/components/ApperIcon";
 import Header from "@/components/organisms/Header";
 import WeeklyView from "@/components/organisms/WeeklyView";
+import FOIARequestView from "@/components/organisms/FOIARequestView";
 import TeamView from "@/components/organisms/TeamView";
 import PersonalView from "@/components/organisms/PersonalView";
 import CheckInModal from "@/components/molecules/CheckInModal";
@@ -61,9 +61,8 @@ const renderView = () => {
         return <FOIARequestView />;
       default:
         return <PersonalView onCheckIn={handleCheckIn} />;
-    }
+}
   };
-};
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
@@ -121,7 +120,8 @@ const renderView = () => {
         theme="light"
         style={{ zIndex: 9999 }}
       />
-    </div>
+</div>
   );
+}
 
 export default App;
